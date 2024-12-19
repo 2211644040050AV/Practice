@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    display: flexbox;
+    place-items: center;
+    margin: 0;
+    background-image: url(.././img/fd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    color: rgb(233, 218, 11);
+}
+
+span {
+    font-weight: 1000;
+}
+
+p,
+span {
+    color: rgb(255, 255, 255);
+}
+
+main {
+    width: 80vw;
+    background: transparent;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .hd1 h1 {
+    font-size: 3rem;
+    color: rgb(196, 196, 4);
+}
+
+.head .hd1 h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.head .hd1,
+.hd2 {
+    margin: 5% 0;
+    background: transparent;
+}
+
+.head .hd2 {
+    padding: 2% 0;
+    color: white;
+}
+
+.hd1 .over-view {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.over-view h2::after {
+    display: block;
+    content: "";
+    width: 2vw;
+    height: 0.5vw;
+    background-color: #ffffff;
+    margin: 1vw 0;
+}
+
+.hd2 span {
+    width: 30vw;
+    font-size: 1.5vw;
+    display: block;
+    overflow: auto;
+}
+
+.flex {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex .img img {
+    width: 30vw;
+}
+
+.flex .over-view p,
+span {
+    margin: 0.8vw 0;
+}

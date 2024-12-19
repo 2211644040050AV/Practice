@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background: linear-gradient(125deg, blue, rgb(60, 60, 235), rgb(105, 105, 247), rgb(20, 156, 220));
+    }
+
+    .box {
+      width: 20px;
+      height: 20px;
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      animation: load 1s linear infinite;
+
+
+
+    }
+
+    @keyframes load {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+
+  </div>
+</body>
+
+</html>
