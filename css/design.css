@@ -150,17 +150,17 @@ ul li a:hover{
 
 .form{
     width: 250px;
-    height: 350px;
-    background: -o-linear-gradient(to top, rgba(0,0,0,0.8) 50%,  rgba(0,0,0,0.8) 50%,);
+    height: 370px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
     position: absolute;
-    top: -20px;
-    left: 870px;
+    top: -50px;
+    left: 830px;
     border-radius: 10px;
     padding: 25px;
 }
 
 .form h2{
-    width: 250px;
+    width: 230px;
     font-family: sans-serif;
     text-align: center;
     color: rgb(255, 72, 5);
@@ -231,4 +231,21 @@ ul li a:hover{
 .liw {
     padding-top: 15px 0 10px 0;
     text-align: center;
-} 
+}
+
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon ion-icon{
+    color: #fff;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-left: 18px;
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover {
+    color: rgb(255, 72, 5);
+}
