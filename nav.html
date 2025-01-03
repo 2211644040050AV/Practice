@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -16,11 +16,11 @@
         <div class="navbar">
             <div class="logo"><a href="#">Web Dev Creative</a></div>
             <ul class="links">
-                <li><a href="home">Home</a></li>
-                <li><a href="testimonals">Testimonals</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="Services">Services</a></li>
-                <li><a href="ContactUs">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             <a href="#" class="action-btn">Get Started</a>
             <div class="toggle-btn">
@@ -28,31 +28,36 @@
             </div>
         </div>
 
-        <div class="dropdown-menu open">
-            <li><a href="home">Home</a></li>
-            <li><a href="testimonals">Testimonals</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="Services">Services</a></li>
-            <li><a href="ContactUs">Contact Us</a></li>
-            <li> <a href="#" class="action-btn">Get Started</a></li>
+        <div class="dropdown-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" class="action-btn">Get Started</a></li>
+            </ul>
         </div>
-
     </header>
 
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eius temporibus? Minus incidunt
+                molestias corporis nostrum facere ab, sequi odio tempora dolorum harum.</p>
+        </section>
+    </main>
+
     <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropdownMenu = document.querySelector('.dropdown-menu')
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
 
-        toggleBtn.onclick = function () {
-            dropdownMenu.classList.toggle('open')
-            const isOpen = dropdownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-        }
-
+        toggleBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('open');
+            toggleBtnIcon.className = dropdownMenu.classList.contains('open') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        });
     </script>
-
 </body>
 
 </html>
