@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Map Example</h1>
+    <p>Click on the areas of the image below:</p>
+
+    <!-- Image fetched from the internet -->
+    <img src="img/1.jpg" usemap="#image-map" alt="Sample Image">
+
+    <map name="image-map">
+        <area shape="rect" coords="34,44,270,350" href="https://www.example1.com" alt="Example 1" title="Example 1">
+        <area shape="circle" coords="337,300,44" href="https://www.example2.com" alt="Example 2" title="Example 2">
+        <area shape="poly" coords="200,10,250,190,160,210" href="https://www.example3.com" alt="Example 3"
+            title="Example 3">
+    </map>
+
+    <p>Hover over the areas to see the links!</p>
+
+</body>
+
+</html>
