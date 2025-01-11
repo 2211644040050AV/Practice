@@ -1,0 +1,5 @@
+<!-- SVG for the profile icon -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="8" r="4" fill="none" stroke="white"></circle>
+  <path d="M16 20H8c-2 0-4-1-4-3v-1c0-2 2-4 4-4h8c2 0 4 2 4 4v1c0 2-2 3-4 3z" fill="none" stroke="white"></path>
+</svg>
