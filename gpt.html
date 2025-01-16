@@ -4,24 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT Static Clone</title>
+    <title>ChatGPT Clone</title>
     <link rel="stylesheet" href="css/gpt.css">
 </head>
 
 <body>
-    <section>
+    <!-- Header Section -->
+    <section class="top">
         <div class="header">
-            <div class="h1">
-                <img src="svg/book1.svg" alt="">
-                <img src="svg/book2.svg" alt="">
-                <span class="head2">ChatGPT</span>
-                <img src="svg/arrow.svg" alt="">
+            <div class="logo">
+                <img src="svg/book1.svg" alt="Logo Part 1">
+                <img src="svg/book2.svg" alt="Logo Part 2">
+                <span class="title">ChatGPT</span>
+                <img src="svg/arrow.svg" alt="Dropdown Arrow">
             </div>
-            <div class="h2">
-                <!-- <img src="svg/profile.svg" alt=""> -->
+            <div class="profile">
+                <img src="svg/profile.svg" alt="Profile Icon">
             </div>
         </div>
     </section>
+
+    <!-- Main Section -->
+    <section class="mid">
+        <div class="heading">
+            <h1>What can I help with?</h1>
+        </div>
+        <div class="input-box">
+            <textarea placeholder="Type your message here..." name="user-input" id="user-input"></textarea>
+            <button class="send-btn">Send</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 ChatGPT. Powered by OpenAI.</p>
+    </footer>
 </body>
 
 </html>

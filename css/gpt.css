@@ -1,10 +1,112 @@
-*{
+/* Reset and General */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    background: #000;
+body {
+    background-color: #f7f8fc; /* Light background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #000;
     color: #fff;
+}
+
+/* Header Section */
+.top {
+    color: white;
+    padding: 15px 20px;
+} 
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .profile img {
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Main Section */
+.mid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box textarea {
+    background-color: #4f4646;
+    color: #fff;
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-box .send-btn {
+    background-color: #4f4646;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-box .send-btn:hover {
+    background-color: #867171;
+    color: #000000;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 0.9rem;
 }
