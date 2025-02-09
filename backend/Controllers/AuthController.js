@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt');
 const UserModel = require('../Models/User');
+
 const signup = async (req, res) => {
     try {
         const { name, email, password} = req.body;
@@ -7,9 +8,9 @@ const signup = async (req, res) => {
         if (user) {
             return res.status(409).json({ message: 'User is already exist, you can login', success: false });
         }
-        const UserModel = new UserModel({name, email, password});
-        UserModel.password = await bcrypt.hash(password, 10);
-        await UserData.save();
+        const userModel = new UserModel({name, email, password});
+        userModel.password = await bcrypt.hash(password, 10);
+        await userModel.save();
         res.status(201).json({ message: "signup successfull", success: true })
     }
     catch (err) {
