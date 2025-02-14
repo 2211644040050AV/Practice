@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(to right, #041308, #0b3317);
+        }
+
+        .left {
+            flex-basis: 30%;
+        }
+
+        .heading {
+            font-size: 3rem;
+            text-align: center;
+            color: #f4f4f4;
+        }
+
+        .subText {
+            color: #f4f4f4;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .gallery {
+            flex-basis: 50%;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 120px;
+        }
+
+        .box {
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f4f4f4;
+            background-color: #222;
+            background-blend-mode: hard-light;
+            transition: all 1s ease-in-out;
+        }
+
+        #row{
+            grid-row: span 2;
+        }
+
+        #column{
+            grid-column: span 2;
+        }
+
+        .box:hover{
+            background-color: #999;
+            background-position: center;
+            box-shadow: 0 0 4px #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h2 class="heading">My Portfolio</h2>
+            <p class="subText">When words become unclear, I shall focus with photograph. When images become inadequate I shall be content with silence.</p>
+        </div>
+        <div class="gallery">
+            <div class="box" id="row" style="background-image: url(gallery/1.jpg);">Mountain</div>
+            <div class="box" id="column" style="background-image: url(gallery/2.jpg);">Forest</div>
+            <div class="box" id="#" style="background-image: url(gallery/3.jpg);">Green Stairs</div>
+            <div class="box" id="row" style="background-image: url(gallery/4.jpg);">Red Rose</div>
+            <div class="box" id="#" style="background-image: url(gallery/5.jpg);">Dark Sky</div>
+            <div class="box" id="row" style="background-image: url(gallery/6.jpg);">Couple</div>
+            <div class="box" id="row" style="background-image: url(gallery/7.jpg);">Tiger</div>
+            <div class="box" id="" style="background-image: url(gallery/8.jpg);">Red Rose</div>
+            <div class="box" id="column" style="background-image: url(gallery/9.jpg);">Ocean</div>
+            <div class="box" id="column" style="background-image: url(gallery/10.jpg);">Team</div>
+            <div class="box" id="#" style="background-image: url(img/mountain.jpeg);">Team</div>
+
+        </div>
+    </div>
+</body>
+</html>
