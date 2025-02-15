@@ -64,19 +64,46 @@
             transition: all 1s ease-in-out;
         }
 
-        #row{
+        #row {
             grid-row: span 2;
         }
 
-        #column{
+        #column {
             grid-column: span 2;
         }
 
-        .box:hover{
+        #last-img {
+            background-image: url(img/mountain.jpeg); 
+            grid-column: span 3;
+        }
+
+        .box:hover {
             background-color: #999;
             background-position: center;
             box-shadow: 0 0 4px #fff;
             cursor: pointer;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                padding-block: 20px;
+            }
+
+            .gallery {
+                width: 100%;
+                padding-inline: 15px;
+                grid-auto-rows: 220px;
+            }
+
+            .box {
+                grid-row: span 1;
+                grid-column: span 3;
+            }
+
+            .hide{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -85,22 +112,24 @@
     <div class="container">
         <div class="left">
             <h2 class="heading">My Portfolio</h2>
-            <p class="subText">When words become unclear, I shall focus with photograph. When images become inadequate I shall be content with silence.</p>
+            <p class="subText">When words become unclear, I shall focus with photograph. When images become inadequate I
+                shall be content with silence.</p>
         </div>
         <div class="gallery">
             <div class="box" id="row" style="background-image: url(gallery/1.jpg);">Mountain</div>
-            <div class="box" id="column" style="background-image: url(gallery/2.jpg);">Forest</div>
+            <div class="box hide" id="column" style="background-image: url(gallery/2.jpg);">Forest</div>
             <div class="box" id="#" style="background-image: url(gallery/3.jpg);">Green Stairs</div>
             <div class="box" id="row" style="background-image: url(gallery/4.jpg);">Red Rose</div>
             <div class="box" id="#" style="background-image: url(gallery/5.jpg);">Dark Sky</div>
             <div class="box" id="row" style="background-image: url(gallery/6.jpg);">Couple</div>
             <div class="box" id="row" style="background-image: url(gallery/7.jpg);">Tiger</div>
             <div class="box" id="" style="background-image: url(gallery/8.jpg);">Red Rose</div>
-            <div class="box" id="column" style="background-image: url(gallery/9.jpg);">Ocean</div>
-            <div class="box" id="column" style="background-image: url(gallery/10.jpg);">Team</div>
-            <div class="box" id="#" style="background-image: url(img/mountain.jpeg);">Team</div>
+            <div class="box" id="column hide" style="background-image: url(gallery/9.jpg);">Ocean</div>
+            <div class="box hide" id="column" style="background-image: url(gallery/10.jpg);">Team</div>
+            <div class="box" id="last-img">Team</div>
 
         </div>
     </div>
 </body>
+
 </html>
