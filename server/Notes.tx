@@ -1,0 +1,5 @@
+initialize the project - 
+npm init -y
+
+for creating server require the http - 
+const http = require('http)
